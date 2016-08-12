@@ -61,6 +61,10 @@ class App extends React.Component {
   }
 
   renderForkMe() {
+    if (this.state.hasLogin) {
+      return null;
+    }
+
     return (
       <GitHubForkRibbon href="//github.com/DPr00f/pokemon-go-stats"
                         target="_blank"

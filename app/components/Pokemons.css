@@ -73,6 +73,12 @@
   position: relative;
 }
 
+.dropdownContainer {
+  margin: auto;
+  width: 200px;
+  padding: 20px;
+}
+
 [class^="Pokemons__poke"] {
   width: 110px;
   height: 110px;
