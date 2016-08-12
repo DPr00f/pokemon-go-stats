@@ -1,7 +1,9 @@
 # Install
 
 ```git clone git@github.com:DPr00f/pokemon-go-stats.git```
+
 ```cd pokemon-go-stats```
+
 ```npm install```
 
 # Run
