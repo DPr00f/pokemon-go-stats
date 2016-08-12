@@ -1,1 +1,1 @@
-web: NODE_ENV=production PORT=80 node server.js
+web: node server.js
