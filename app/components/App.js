@@ -3,6 +3,7 @@ import Pokemons from './Pokemons';
 import styles from './App.css';
 import ApiActions from '../actions/api';
 import store from '../store';
+import GitHubForkRibbon from 'react-github-fork-ribbon';
 import { ERROR_ON_PROFILE, GOT_PROFILE } from '../events';
 
 class App extends React.Component {
@@ -59,6 +60,16 @@ class App extends React.Component {
     ApiActions.getGoogleProfile(this.getUserAndPass());
   }
 
+  renderForkMe() {
+    return (
+      <GitHubForkRibbon href="//github.com/DPr00f/pokemon-go-stats"
+                        target="_blank"
+                        position="right">
+        Fork me on GitHub
+      </GitHubForkRibbon>
+    );
+  }
+
   renderLogin() {
     if (this.state.hasLogin) {
       return null;
@@ -101,6 +112,7 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
+        { this.renderForkMe() }
         { this.renderError() }
         { this.renderLogin() }
         { this.renderPokemons() }
