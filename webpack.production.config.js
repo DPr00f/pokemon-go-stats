@@ -53,7 +53,14 @@ module.exports = {
       loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
     }, {
       test: /^((?!\.global).)*\.css$/,
-      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
+      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]__[local]--[hash:base64:5]!postcss')
+    },
+    {
+      test: /\.(jpe?g|png|gif|svg)$/i,
+      loaders: [
+        'file?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack?bypassOnDebug&optimizationLevel=10&interlaced=false'
+      ]
     }]
   },
   postcss: [

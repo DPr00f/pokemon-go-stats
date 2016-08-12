@@ -1,0 +1,689 @@
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.boxCenter {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: space-between;
+  -ms-flex-line-pack: justify;
+  align-content: space-between;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.cp {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 10px;
+    width: 100%;
+}
+
+.iv {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.name {
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.box {
+  width: 154px;
+  height: 220px;
+  background: #3466af;
+  background: -moz-linear-gradient(top, #3466af 0%, #3466af 40%, #3466af 40%, #ffffff 40%, #ffffff 40%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #3466af 0%,#3466af 40%,#3466af 40%,#ffffff 40%,#ffffff 40%,#ffffff 100%);
+  background: linear-gradient(to bottom, #3466af 0%,#3466af 40%,#3466af 40%,#ffffff 40%,#ffffff 40%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3466af', endColorstr='#ffffff',GradientType=0 );
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin: 5px;
+  position: relative;
+}
+
+[class^="Pokemons__poke"] {
+  width: 110px;
+  height: 110px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.poke1 {
+  background-image: url(../images/1.png);
+}
+
+.poke2 {
+  background-image: url(../images/2.png);
+}
+
+.poke3 {
+  background-image: url(../images/3.png);
+}
+
+.poke4 {
+  background-image: url(../images/4.png);
+}
+
+.poke5 {
+  background-image: url(../images/5.png);
+}
+
+.poke6 {
+  background-image: url(../images/6.png);
+}
+
+.poke7 {
+  background-image: url(../images/7.png);
+}
+
+.poke8 {
+  background-image: url(../images/8.png);
+}
+
+.poke9 {
+  background-image: url(../images/9.png);
+}
+
+.poke10 {
+  background-image: url(../images/10.png);
+}
+
+.poke11 {
+  background-image: url(../images/11.png);
+}
+
+.poke12 {
+  background-image: url(../images/12.png);
+}
+
+.poke13 {
+  background-image: url(../images/13.png);
+}
+
+.poke14 {
+  background-image: url(../images/14.png);
+}
+
+.poke15 {
+  background-image: url(../images/15.png);
+}
+
+.poke16 {
+  background-image: url(../images/16.png);
+}
+
+.poke17 {
+  background-image: url(../images/17.png);
+}
+
+.poke18 {
+  background-image: url(../images/18.png);
+}
+
+.poke19 {
+  background-image: url(../images/19.png);
+}
+
+.poke20 {
+  background-image: url(../images/20.png);
+}
+
+.poke21 {
+  background-image: url(../images/21.png);
+}
+
+.poke22 {
+  background-image: url(../images/22.png);
+}
+
+.poke23 {
+  background-image: url(../images/23.png);
+}
+
+.poke24 {
+  background-image: url(../images/24.png);
+}
+
+.poke25 {
+  background-image: url(../images/25.png);
+}
+
+.poke26 {
+  background-image: url(../images/26.png);
+}
+
+.poke27 {
+  background-image: url(../images/27.png);
+}
+
+.poke28 {
+  background-image: url(../images/28.png);
+}
+
+.poke29 {
+  background-image: url(../images/29.png);
+}
+
+.poke30 {
+  background-image: url(../images/30.png);
+}
+
+.poke31 {
+  background-image: url(../images/31.png);
+}
+
+.poke32 {
+  background-image: url(../images/32.png);
+}
+
+.poke33 {
+  background-image: url(../images/33.png);
+}
+
+.poke34 {
+  background-image: url(../images/34.png);
+}
+
+.poke35 {
+  background-image: url(../images/35.png);
+}
+
+.poke36 {
+  background-image: url(../images/36.png);
+}
+
+.poke37 {
+  background-image: url(../images/37.png);
+}
+
+.poke38 {
+  background-image: url(../images/38.png);
+}
+
+.poke39 {
+  background-image: url(../images/39.png);
+}
+
+.poke40 {
+  background-image: url(../images/40.png);
+}
+
+.poke41 {
+  background-image: url(../images/41.png);
+}
+
+.poke42 {
+  background-image: url(../images/42.png);
+}
+
+.poke43 {
+  background-image: url(../images/43.png);
+}
+
+.poke44 {
+  background-image: url(../images/44.png);
+}
+
+.poke45 {
+  background-image: url(../images/45.png);
+}
+
+.poke46 {
+  background-image: url(../images/46.png);
+}
+
+.poke47 {
+  background-image: url(../images/47.png);
+}
+
+.poke48 {
+  background-image: url(../images/48.png);
+}
+
+.poke49 {
+  background-image: url(../images/49.png);
+}
+
+.poke50 {
+  background-image: url(../images/50.png);
+}
+
+.poke51 {
+  background-image: url(../images/51.png);
+}
+
+.poke52 {
+  background-image: url(../images/52.png);
+}
+
+.poke53 {
+  background-image: url(../images/53.png);
+}
+
+.poke54 {
+  background-image: url(../images/54.png);
+}
+
+.poke55 {
+  background-image: url(../images/55.png);
+}
+
+.poke56 {
+  background-image: url(../images/56.png);
+}
+
+.poke57 {
+  background-image: url(../images/57.png);
+}
+
+.poke58 {
+  background-image: url(../images/58.png);
+}
+
+.poke59 {
+  background-image: url(../images/59.png);
+}
+
+.poke60 {
+  background-image: url(../images/60.png);
+}
+
+.poke61 {
+  background-image: url(../images/61.png);
+}
+
+.poke62 {
+  background-image: url(../images/62.png);
+}
+
+.poke63 {
+  background-image: url(../images/63.png);
+}
+
+.poke64 {
+  background-image: url(../images/64.png);
+}
+
+.poke65 {
+  background-image: url(../images/65.png);
+}
+
+.poke66 {
+  background-image: url(../images/66.png);
+}
+
+.poke67 {
+  background-image: url(../images/67.png);
+}
+
+.poke68 {
+  background-image: url(../images/68.png);
+}
+
+.poke69 {
+  background-image: url(../images/69.png);
+}
+
+.poke70 {
+  background-image: url(../images/70.png);
+}
+
+.poke71 {
+  background-image: url(../images/71.png);
+}
+
+.poke72 {
+  background-image: url(../images/72.png);
+}
+
+.poke73 {
+  background-image: url(../images/73.png);
+}
+
+.poke74 {
+  background-image: url(../images/74.png);
+}
+
+.poke75 {
+  background-image: url(../images/75.png);
+}
+
+.poke76 {
+  background-image: url(../images/76.png);
+}
+
+.poke77 {
+  background-image: url(../images/77.png);
+}
+
+.poke78 {
+  background-image: url(../images/78.png);
+}
+
+.poke79 {
+  background-image: url(../images/79.png);
+}
+
+.poke80 {
+  background-image: url(../images/80.png);
+}
+
+.poke81 {
+  background-image: url(../images/81.png);
+}
+
+.poke82 {
+  background-image: url(../images/82.png);
+}
+
+.poke83 {
+  background-image: url(../images/83.png);
+}
+
+.poke84 {
+  background-image: url(../images/84.png);
+}
+
+.poke85 {
+  background-image: url(../images/85.png);
+}
+
+.poke86 {
+  background-image: url(../images/86.png);
+}
+
+.poke87 {
+  background-image: url(../images/87.png);
+}
+
+.poke88 {
+  background-image: url(../images/88.png);
+}
+
+.poke89 {
+  background-image: url(../images/89.png);
+}
+
+.poke90 {
+  background-image: url(../images/90.png);
+}
+
+.poke91 {
+  background-image: url(../images/91.png);
+}
+
+.poke92 {
+  background-image: url(../images/92.png);
+}
+
+.poke93 {
+  background-image: url(../images/93.png);
+}
+
+.poke94 {
+  background-image: url(../images/94.png);
+}
+
+.poke95 {
+  background-image: url(../images/95.png);
+}
+
+.poke96 {
+  background-image: url(../images/96.png);
+}
+
+.poke97 {
+  background-image: url(../images/97.png);
+}
+
+.poke98 {
+  background-image: url(../images/98.png);
+}
+
+.poke99 {
+  background-image: url(../images/99.png);
+}
+
+.poke100 {
+  background-image: url(../images/100.png);
+}
+
+.poke101 {
+  background-image: url(../images/101.png);
+}
+
+.poke102 {
+  background-image: url(../images/102.png);
+}
+
+.poke103 {
+  background-image: url(../images/103.png);
+}
+
+.poke104 {
+  background-image: url(../images/104.png);
+}
+
+.poke105 {
+  background-image: url(../images/105.png);
+}
+
+.poke106 {
+  background-image: url(../images/106.png);
+}
+
+.poke107 {
+  background-image: url(../images/107.png);
+}
+
+.poke108 {
+  background-image: url(../images/108.png);
+}
+
+.poke109 {
+  background-image: url(../images/109.png);
+}
+
+.poke110 {
+  background-image: url(../images/110.png);
+}
+
+.poke111 {
+  background-image: url(../images/111.png);
+}
+
+.poke112 {
+  background-image: url(../images/112.png);
+}
+
+.poke113 {
+  background-image: url(../images/113.png);
+}
+
+.poke114 {
+  background-image: url(../images/114.png);
+}
+
+.poke115 {
+  background-image: url(../images/115.png);
+}
+
+.poke116 {
+  background-image: url(../images/116.png);
+}
+
+.poke117 {
+  background-image: url(../images/117.png);
+}
+
+.poke118 {
+  background-image: url(../images/118.png);
+}
+
+.poke119 {
+  background-image: url(../images/119.png);
+}
+
+.poke120 {
+  background-image: url(../images/120.png);
+}
+
+.poke121 {
+  background-image: url(../images/121.png);
+}
+
+.poke122 {
+  background-image: url(../images/122.png);
+}
+
+.poke123 {
+  background-image: url(../images/123.png);
+}
+
+.poke124 {
+  background-image: url(../images/124.png);
+}
+
+.poke125 {
+  background-image: url(../images/125.png);
+}
+
+.poke126 {
+  background-image: url(../images/126.png);
+}
+
+.poke127 {
+  background-image: url(../images/127.png);
+}
+
+.poke128 {
+  background-image: url(../images/128.png);
+}
+
+.poke129 {
+  background-image: url(../images/129.png);
+}
+
+.poke130 {
+  background-image: url(../images/130.png);
+}
+
+.poke131 {
+  background-image: url(../images/131.png);
+}
+
+.poke132 {
+  background-image: url(../images/132.png);
+}
+
+.poke133 {
+  background-image: url(../images/133.png);
+}
+
+.poke134 {
+  background-image: url(../images/134.png);
+}
+
+.poke135 {
+  background-image: url(../images/135.png);
+}
+
+.poke136 {
+  background-image: url(../images/136.png);
+}
+
+.poke137 {
+  background-image: url(../images/137.png);
+}
+
+.poke138 {
+  background-image: url(../images/138.png);
+}
+
+.poke139 {
+  background-image: url(../images/139.png);
+}
+
+.poke140 {
+  background-image: url(../images/140.png);
+}
+
+.poke141 {
+  background-image: url(../images/141.png);
+}
+
+.poke142 {
+  background-image: url(../images/142.png);
+}
+
+.poke143 {
+  background-image: url(../images/143.png);
+}
+
+.poke144 {
+  background-image: url(../images/144.png);
+}
+
+.poke145 {
+  background-image: url(../images/145.png);
+}
+
+.poke146 {
+  background-image: url(../images/146.png);
+}
+
+.poke147 {
+  background-image: url(../images/147.png);
+}
+
+.poke148 {
+  background-image: url(../images/148.png);
+}
+
+.poke149 {
+  background-image: url(../images/149.png);
+}
+
+.poke150 {
+  background-image: url(../images/150.png);
+}
+
+.poke151 {
+  background-image: url(../images/151.png);
+}

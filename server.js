@@ -1,3 +1,4 @@
+'use strict';
 /* eslint no-console: 0 */
 
 const path = require('path');
@@ -6,11 +7,13 @@ const webpack = require('webpack');
 const webpackMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
 const config = require('./webpack.config.js');
+const bodyParser = require('body-parser');
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
 const port = isDeveloping ? 3000 : process.env.PORT;
 const app = express();
-var response = (req, res) => {
+const ProfileController = require('./appServer/controllers/Profile');
+let ResponseController = (req, res) => {
   res.sendFile(path.join(__dirname, 'dist/index.html'));
 };
 
@@ -32,16 +35,19 @@ if (isDeveloping) {
 
   app.use(middleware);
   app.use(webpackHotMiddleware(compiler));
-  response = (req, res) => {
+  ResponseController = (req, res) => {
     res.write(middleware.fileSystem.readFileSync(path.join(__dirname, 'dist/index.html')));
     res.end();
   };
 } else {
   app.use(express.static(__dirname + '/dist'));
 }
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // ---- ROUTES ---- //
-app.get('*', response);
+app.post('/api/profile', ProfileController.route);
+app.get('*', ResponseController);
 
 app.listen(port, '0.0.0.0', (err) => {
   if (err) {
