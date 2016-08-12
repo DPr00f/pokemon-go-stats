@@ -1,6 +1,6 @@
 # Example app
 
-[Here you can find the app running on an heroku server](http://pokeiv.herokuapp.com/)
+[Here you can find the app running on an scalingo server](https://pokeiv.scalingo.io)
 
 # Install
 
