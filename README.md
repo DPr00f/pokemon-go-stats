@@ -1,3 +1,7 @@
+# Example app
+
+(Here you can find the app running on an heroku server)[http://pokeiv.herokuapp.com/]
+
 # Install
 
 ```git clone git@github.com:DPr00f/pokemon-go-stats.git```
